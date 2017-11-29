@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--E:\7bao\branches\7Bao-project\usermgmt\src\main\resources\META-INF\mapper\SevenBaoAccountInfoMapper.xml-->
+<mapper namespace="com.wzitech.gamegold.usermgmt.entity.SevenBaoAccountInfoEO">
+
+    <resultMap id="BaseResultMap" type="com.wzitech.gamegold.usermgmt.entity.SevenBaoAccountInfoEO">
+        <result column="id" property="id"/>
+        <result column="login_account" property="loginAccount"/>
+        <result column="name" property="name"/>
+        <result column="qq" property="qq"/>
+        <result column="phone_number" property="phoneNumber"/>
+        <result column="is_deleted" property="isDeleted"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="is_user_bind" property="isUserBind"/>
+        <result column="uid" property="uid"/>
+        <result column="total_amount" property="totalAmount"/>
+        <result column="freeze_amount" property="freezeAmount"/>
+        <result column="available_amount" property="availableAmount"/>
+        <result column="kefuqq" property="kefuqq"/>
+        <result column="zbao_login_account" property="zbaoLoginAccount"/>
+        <result column="bank_name" property="bankName"/>
+        <result column="account_number" property="accountNO"/>
+        <result column="account_property" property="accountProp"/>
+        <result column="province" property="province"/>
+        <result column="city" property="city"/>
+        <result column="sub_bank_name" property="subBankName"/>
+        <result column="apply_time" property="applyTime"/>
+        <result column="show_name" property="showName"/>
+        <result column="province_name" property="provinceName"/>
+        <result column="city_name" property="cityName"/>
+        <result column="is_sh_bind" property="isShBind"/>
+    </resultMap>
+
+
+    <sql id="selectSql">
+        <where>
+
+            <if test="loginAccount != null and loginAccount != ''">
+                AND "login_account" LIKE '%'||#{loginAccount}||'%'
+            </if>
+            <if test="name != null and name != ''">
+                AND "name" LIKE '%'||#{name}||'%'
+            </if>
+            <if test="isDeleted != null">
+                AND "is_deleted" = #{isDeleted}
+            </if>
+            <if test="id != null">
+                AND "id"= #{id}
+            </if>
+            <if test="isUserBind != null">
+                AND "is_user_bind"= #{isUserBind}
+            </if>
+            <if test="isShBind != null">
+                AND "is_sh_bind"= #{isShBind}
+            </if>
+            <if test="date != null">
+                ${value}
+            </if>
+            <if test="uid != null">
+                AND "uid"= #{uid}
+            </if>
+        </where>
+    </sql>
+
+    <!-- 统计符合条件的实体对象个数 -->
+    <select id="countByMap" parameterType="map" resultType="int">
+        SELECT COUNT(1) FROM "zbao_account"
+        <include refid="selectSql"/>
+    </select>
+    <!--连表查询银行名称字段-->
+    <select id="selectBankName" parameterType="map" resultType="String">
+       SELECT b."name"  FROM "zbao_account" a LEFT OUTER JOIN "zbao_bank" b ON a.bank_name = b.code  WHERE
+        "login_account" = #{loginAccount}
+    </select>
+
+    <select id="selectById" parameterType="long" resultMap="BaseResultMap">
+        SELECT * FROM zbao_account WHERE id = #{id}
+    </select>
+
+    <!-- 查询符合条件的实体对象 -->
+    <select id="selectByMap" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.gamegold.usermgmt.entity.SevenBaoAccountInfoEO">
+        SELECT * FROM "zbao_account"
+        <include refid="selectSql"/>
+        <if test="ORDERBY != null and ORDERBY != ''">
+            ORDER BY "${ORDERBY}"
+        </if>
+        <if test="ORDER != null and ORDER != ''">
+            ${ORDER}
+        </if>
+        <if test="limit != null">
+            LIMIT #{limit}
+        </if>
+        <if test="start != null">
+            OFFSET #{start}
+        </if>
+    </select>
+    <!-- 查询符合条件的唯一记录 -->
+    <select id="selectUniqueByProp" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.gamegold.usermgmt.entity.SevenBaoAccountInfoEO">
+        SELECT * FROM "zbao_account"
+        <where>
+            <if test="id != null">
+                "id" = #{id}
+            </if>
+            <if test="loginAccount != null and loginAccount != ''">
+                "login_account" = #{loginAccount}
+            </if>
+            <if test="realName != null and realName != ''">
+                "real_name" = #{realName}
+            </if>
+            <if test="phoneNumber != null and phoneNumber != ''">
+                "phone_number" = #{phoneNumber}
+            </if>
+            <if test="uid != null and uid != ''">
+                "uid" = #{uid}
+            </if>
+        </where>
+        FOR UPDATE
+    </select>
+    <!-- 批量更新记录 -->
+    <update id="batchUpdate" parameterType="com.wzitech.gamegold.usermgmt.entity.SevenBaoAccountInfoEO">
+        <foreach collection="list" item="item" index="index" separator="OR">
+            UPDATE "zbao_account"
+            <set>
+                <if test="item.loginAccount != null and item.loginAccount != ''">
+                    "login_account" = #{item.loginAccount},
+                </if>
+                <if test="item.name != null and item.name != ''">
+                    "name" = #{item.name},
+                </if>
+                <if test="item.qq != null">
+                    "qq" = #{item.qq},
+                </if>
+                <if test="item.kefuqq != null">
+                    "kefuqq" = #{item.kefuqq},
+                </if>
+                <if test="item.isUserBind != null ">
+                    "is_user_bind" = #{item.isUserBind},
+                </if>
+                <if test="item.phoneNumber != null">
+                    "phone_number" = #{item.phoneNumber},
+                </if>
+                <if test="item.totalAmount != null">
+                    "total_amount" = #{item.totalAmount},
+                </if>
+                <if test="item.freezeAmount != null">
+                    "freeze_amount" = #{item.freezeAmount},
+                </if>
+                <if test="item.availableAmount != null">
+                    "available_amount" = #{item.availableAmount},
+                </if>
+                <if test="item.subBankName != null">
+                    "sub_bank_name" = #{item.subBankName},
+                </if>
+                <if test="item.bankName != null">
+                    "bank_name" = #{item.bankName},
+                </if>
+                <if test="item.accountNO != null">
+                    "account_number" = #{item.accountNO},
+                </if>
+                <if test="item.accountProp != null">
+                    "account_property" = #{item.accountProp},
+                </if>
+                <if test="item.province != null">
+                    "province" = #{item.province},
+                </if>
+                <if test="item.city != null">
+                    "city" = #{item.city},
+                </if>
+                <if test="item.applyTime != null">
+                    "apply_time" = #{item.applyTime},
+                </if>
+                <if test="item.uid != null">
+                    "uid" = #{item.uid},
+                </if>
+                <if test="item.provinceName != null">
+                    "province_name" = #{item.provinceName},
+                </if>
+                <if test="item.cityName != null">
+                    "city_name" = #{item.cityName},
+                </if>
+                <if test="item.isShBind != null">
+                    "is_sh_bind" = #{item.isShBind},
+                </if>
+                "is_deleted" = #{item.isDeleted},
+                "update_time"=now()
+            </set>
+            <where>
+                "id" = #{item.id}
+            </where>
+        </foreach>
+    </update>
+    <!--selectAccount-->
+    <!-- 查询符合条件的实体对象 -->
+    <select id="selectAccount" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.Z7Bao.frontend.entity.ZbaoBank">
+        SELECT * FROM zbao_account where login_account = #{loginAccount}
+    </select>
+
+    <!-- 往数据库插入数据 -->
+    <insert id="insert" parameterType="com.wzitech.gamegold.usermgmt.entity.SevenBaoAccountInfoEO"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into zbao_account
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="loginAccount != null and loginAccount != ''">
+                login_account,
+            </if>
+            <if test="name != null and name != ''">
+                name,
+            </if>
+            <if test="uid != null and uid != ''">
+                uid,
+            </if>
+            <if test="totalAmount != null and totalAmount != ''">
+                totalAmount,
+            </if>
+            <if test="freezeAmount != null and freezeAmount != ''">
+                freezeAmount,
+            </if>
+            <if test="availableAmount != null and availableAmount != ''">
+                availableAmount,
+            </if>
+            <if test="qq != null ">
+                qq,
+            </if>
+            <if test="kefuqq != null ">
+                kefuqq,
+            </if>
+            <if test="phoneNumber != null and phoneNumber != ''">
+                phone_number,
+            </if>
+                is_deleted,
+            <if test="createTime != null and createTime != ''">
+                create_time,
+            </if>
+            <if test="updateTime != null and updateTime != ''">
+                update_time,
+            </if>
+            <if test="isUserBind != null">
+                is_user_bind,
+            </if>
+            <if test="zbaoLoginAccount != null and zbaoLoginAccount != ''">
+                zbao_login_account,
+            </if>
+            <if test="applyTime != null and applyTime != ''">
+                apply_time,
+            </if>
+            <if test="bankName != null and bankName != ''">
+                bank_name,
+            </if>
+            <if test="accountNO != null and accountNO != ''">
+                account_number,
+            </if>
+            <if test="accountProp != null and accountProp != ''">
+                account_property,
+            </if>
+            <if test="province != null and province != ''">
+                province,
+            </if>
+            <if test="city != null and city != ''">
+                city,
+            </if>
+            <if test="subBankName != null and subBankName != ''">
+                sub_bank_name,
+            </if>
+            <if test="provinceName != null and provinceName != ''">
+                province_name,
+            </if>
+            <if test="cityName != null and cityName != ''">
+                city_name,
+            </if>
+            <if test="isShBind != null and isShBind != ''">
+                is_sh_bind,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="loginAccount != null and loginAccount != ''">
+                #{loginAccount},
+            </if>
+            <if test="name != null and name != ''">
+                #{name},
+            </if>
+            <if test="uid != null and uid != ''">
+                #{uid},
+            </if>
+            <if test="totalAmount != null and totalAmount !=''">
+                #{totalAmount},
+            </if>
+            <if test="freezeAmount != null and freezeAmount !=''">
+                #{freezeAmount},
+            </if>
+            <if test="availableAmount != null and availableAmount !=''">
+                #{availableAmount},
+            </if>
+
+            <if test="qq != null ">
+                #{qq},
+            </if>
+            <if test="kefuqq != null ">
+                #{kefuqq},
+            </if>
+            <if test="phoneNumber != null and phoneNumber !=''">
+                #{phoneNumber},
+            </if>
+            FALSE ,
+            <if test="createTime != null and createTime !=''">
+                #{createTime},
+            </if>
+            <if test="updateTime != null and updateTime !=''">
+                #{updateTime},
+            </if>
+            <if test="isUserBind != null ">
+                #{isUserBind},
+            </if>
+            <if test="zbaoLoginAccount != null and zbaoLoginAccount !=''">
+                #{zbaoLoginAccount},
+            </if>
+            <if test="applyTime != null and applyTime !=''">
+                #{applyTime},
+            </if>
+            <if test="provinceName != null and provinceName !=''">
+                #{provinceName},
+            </if>
+            <if test="cityName != null and cityName !=''">
+                #{cityName},
+            </if>
+            <if test="isShBind != null and isShBind !=''">
+                #{isShBind},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="selectByUidForUpdate" parameterType="map" resultMap="BaseResultMap">
+        SELECT * FROM "zbao_account" WHERE uid = #{uid}
+        <if test="forUpdate != null and forUpdate==true">
+            for update
+        </if>
+
+    </select>
+
+    <!--queryByAccountAndUid-->
+    <select id="queryByAccountAndUid" parameterType="map" resultMap="BaseResultMap">
+        SELECT * FROM "zbao_account" WHERE
+        login_account = #{account} AND uid = #{uid}
+        <if test="locked != null and locked==true">
+            FOR UPDATE
+        </if>
+    </select>
+
+</mapper>

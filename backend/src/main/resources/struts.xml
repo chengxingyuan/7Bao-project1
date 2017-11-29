@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+    <!-- 最大只能上传100M -->
+    <constant name="struts.multipart.maxSize" value="107374182400"/>
+    <constant name="struts.custom.i18n.resources" value="i18n/framework-messages"/>
+    <package name="gamegold-default" extends="json-default">
+        <result-types>
+            <result-type name="jsonerror" class="com.wzitech.Z7Bao.backend.result.JsonErrorResult"/>
+            <result-type name="json" class="org.apache.struts2.json.JSONResult">
+                <param name="ignoreHierarchy">false</param>
+                <param name="excludeNullProperties">true</param>
+            </result-type>
+        </result-types>
+        <interceptors>
+            <interceptor name="authentication"
+                         class="com.wzitech.Z7Bao.backend.interceptor.AuthenticationInterceptor">
+            </interceptor>
+            <interceptor name="exception"
+                         class="com.wzitech.Z7Bao.backend.interceptor.ExceptionInterceptor">
+            </interceptor>
+            <interceptor name="json" class="org.apache.struts2.json.JSONInterceptor">
+                <param name="ignoreHierarchy">false</param>
+            </interceptor>
+            <interceptor-stack name="gamegoldStack">
+                <interceptor-ref name="exception"/>
+                <interceptor-ref name="authentication"/>
+                <interceptor-ref name="defaultStack"/>
+                <interceptor-ref name="json"/>
+            </interceptor-stack>
+        </interceptors>
+        <default-interceptor-ref name="gamegoldStack"/>
+        <global-results>
+            <result name="jspError">/WEB-INF/page/error.jsp</result>
+            <result name="jsonError" type="jsonerror"></result>
+            <result name="jspLogin">/WEB-INF/page/login.jsp</result>
+            <result name="jsonLogin" type="jsonerror"></result>
+        </global-results>
+    </package>
+
+    <package name="login" namespace="/" extends="gamegold-default">
+        <action name="index" class="loginAction" method="index">
+            <result name="login">/WEB-INF/page/login.jsp</result>
+            <result name="error">/WEB-INF/page/login.jsp</result>
+            <result name="success">/WEB-INF/page/index.jsp</result>
+        </action>
+        <action name="logout" class="loginAction" method="logout">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+    </package>
+
+    <package name="main" namespace="/main" extends="gamegold-default">
+        <action name="currentLoginUserInfo" class="mainAction" method="currentLoginUserInfo">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+
+        <action name="changePassword" class="mainAction" method="changePassword">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+    </package>
+
+    <package name="logData" namespace="/logData" extends="gamegold-default">
+        <action name="querySevenBaoOrder" class="sevenBaoLogDataAction" method="querySevenBaoOrder">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+    </package>
+
+    <!--7bao账号信息管理跳转-->
+    <package name="accout" namespace="/accout" extends="gamegold-default">
+        <action name="queryUserDetail" class="sevenBaoAccountAction" method="queryUserDetail">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="querySevenBaoAccount" class="sevenBaoAccountAction" method="querySevenBaoAccount">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="enableAccount" class="sevenBaoAccountAction" method="enableAccount">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="disableAccount" class="sevenBaoAccountAction" method="disableAccount">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="modifyAccount" class="sevenBaoAccountAction" method="modifyAccount">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+
+    </package>
+
+    <!--资金平衡表跳转-->
+    <package name="fund" namespace="/fund" extends="gamegold-default">
+    <action name="queryFundStatistics" class="fundStatisticsAction" method="queryFundStatistics">
+        <result name="error" type="json"/>
+        <result name="success" type="json"/>
+    </action>
+        <action name="exportFundExcel" class="fundStatisticsAction" method="exportFundExcel">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+    </package>
+
+    <!-- user跳转-->
+    <package name="user" namespace="/user" extends="gamegold-default">
+        <action name="queryUser" class="userAction" method="queryUser">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="addUser" class="userAction" method="addUser">
+            <result name="error" type="json"/>
+            <result name="input" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="modifyUser" class="userAction" method="modifyUser">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="adminModifySubUser" class="userAction" method="adminModifySubUser">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="disableUser" class="userAction" method="disableUser">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="deleteUser" class="userAction" method="deleteUser">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="enableUser" class="userAction" method="enableUser">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="modifyPwd" class="userAction" method="modifyPwd">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="disableQQ" class="userAction" method="disableQQ">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="enableQQ" class="userAction" method="enableQQ">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+
+        <action name="queryUsersGame" class="usersGameAction" method="queryUsersGame">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="saveUser" class="usersGameAction" method="saveUser">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="productionAccount" class="userAction" method="productionAccount">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+
+    </package>
+    <!--银行信息管理-->
+    <package name="bank" namespace="/bank" extends="gamegold-default">
+        <action name="addBank" class="zbaoBankAction" method="addBank">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="modifyBank" class="zbaoBankAction" method="modifyBank">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="deleteBank" class="zbaoBankAction" method="deleteBank">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="queryBank" class="zbaoBankAction" method="queryBank">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="disenable" class="zbaoBankAction" method="disenable">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="enabled" class="zbaoBankAction" method="enabled">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+    </package>
+    <package name="shpurchase" namespace="/shpurchase" extends="gamegold-default">
+        <!--收货系统配置-->
+        <action name="queryConfig" class="shSystemConfigAction" method="queryConfig">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="deleteConfig" class="shSystemConfigAction" method="deleteConfig">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="addConfig" class="shSystemConfigAction" method="addConfig">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="updateConfig" class="shSystemConfigAction" method="updateConfig">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="qyUser" class="shSystemConfigAction" method="qyUser">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="disableUser" class="shSystemConfigAction" method="disableUser">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <!--收货系统配置  end-->
+        <!--资金明细-->
+        <action name="queryZbaoFundDetail" class="zbaoFundDetailAction" method="queryZbaoFundDetail">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="exportFundDetail" class="zbaoFundDetailAction" method="exportFundDetail">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <!--资金明细  end-->
+        <!--提现明细-->
+        <action name="queryZbaoWithdrawals" class="zbaoWithdrawalsAction" method="queryZbaoWithdrawals">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <!--导出提现明细-->
+        <action name="exportFundExcel" class="zbaoWithdrawalsAction" method="exportFundExcel">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <!--提现明细  end-->
+        <!--支付明细-->
+        <action name="queryPayOrder" class="zbaoPayOrderAction" method="queryPayOrder">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="exportPayOrderFundDetail" class="zbaoPayOrderAction" method="exportPayOrderFundDetail">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <!--支付明细  end-->
+        <!--支出明细-->
+        <action name="queryZbaoTransfer" class="zbaoTransferAction" method="queryZbaoTransfer">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <!--支出导出-->
+        <action name="exportTransferExcel" class="zbaoTransferAction" method="exportTransferExcel">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+
+        <!--支出明细  end-->
+        <!--服务费配置-->
+        <action name="queryZbaoServiceAmount" class="zbaoServiceAmountAction" method="queryZbaoServiceAmount">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="addZbaoServiceAmount" class="zbaoServiceAmountAction" method="addZbaoServiceAmount">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="deleteZbaoServiceAmount" class="zbaoServiceAmountAction" method="deleteZbaoServiceAmount">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <action name="updateZbaoServiceAmount" class="zbaoServiceAmountAction" method="updateZbaoServiceAmount">
+            <result name="error" type="json"/>
+            <result name="success" type="json"/>
+        </action>
+        <!--服务费配置  end-->
+    </package>
+
+</struts>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="7Bao-Dao:war">
+    <output-path>$PROJECT_DIR$/7Bao-Dao/target</output-path>
+    <root id="archive" name="7Bao-project.war">
+      <element id="artifact" artifact-name="7Bao-Dao:war exploded" />
+    </root>
+  </artifact>
+</component>

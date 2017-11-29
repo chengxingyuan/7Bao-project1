@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wzitech.gamegold.usermgmt.entity.UserInfoEO">
+
+    <resultMap id="BaseResultMap" type="com.wzitech.gamegold.usermgmt.entity.UserInfoEO">
+        <result column="ID" property="id"/>
+        <result column="login_account" property="loginAccount"/>
+        <result column="password" property="password"/>
+        <result column="real_name" property="realName"/>
+        <result column="sex" property="sex"/>
+        <result column="qq" property="qq"/>
+        <result column="wei_xin" property="weiXin"/>
+        <result column="phone_number" property="phoneNumber"/>
+        <result column="user_type" property="userType"/>
+        <result column="is_deleted" property="isDeleted"/>
+        <result column="uid" property="uid"/>
+        <result column="is_qq_service" property="isQqService"/>
+    </resultMap>
+    <!-- 通过主键列表查找记录 -->
+    <select id="selectByIds" parameterType="java.util.List" resultMap="BaseResultMap"
+            resultType="com.wzitech.gamegold.usermgmt.entity.UserInfoEO">
+        SELECT * FROM "zbao_user" WHERE ID IN
+        <foreach collection="list" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <!-- 通过主键批量删除记录 -->
+    <delete id="batchDeleteByIds" parameterType="java.util.List">
+        DELETE FROM "zbao_user" WHERE "ID" IN
+        <foreach collection="list" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </delete>
+
+    <!-- 新增记录 -->
+    <insert id="insert" parameterType="com.wzitech.gamegold.usermgmt.entity.UserInfoEO" useGeneratedKeys="true"
+            keyProperty="ID">
+        INSERT INTO "zbao_user"
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="loginAccount != null and loginAccount!=''">
+                "login_account",
+            </if>
+            <if test="password != null and password!=''">
+                "password",
+            </if>
+            <if test="realName != null and realName != ''">
+                "real_name",
+            </if>
+            <if test="sex != null">
+                "sex",
+            </if>
+            <if test="qq != null">
+                "qq",
+            </if>
+            <if test="weiXin != null">
+                "wei_xin",
+            </if>
+            <if test="phoneNumber != null">
+                "phone_number",
+            </if>
+            <if test="userType != null">
+                "user_type",
+            </if>
+            <if test="uid != null and uid != ''">
+                "uid",
+            </if>
+            <if test="isQqService != null and isQqService != ''">
+                "is_qq_service",
+            </if>
+            "is_deleted"
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="loginAccount != null and loginAccount!=''">
+               #{loginAccount},
+            </if>
+            <if test="password != null and password!=''">
+                #{password},
+            </if>
+            <if test="realName != null and realName != ''">
+                #{realName},
+            </if>
+            <if test="sex != null">
+                #{sex},
+            </if>
+            <if test="qq != null">
+                 #{qq},
+            </if>
+            <if test="weiXin != null">
+                #{weiXin},
+            </if>
+            <if test="phoneNumber != null">
+                #{phoneNumber},
+            </if>
+            <if test="userType != null">
+                #{userType},
+            </if>
+            <if test="uid != null and uid != ''">
+                #{uid},
+            </if>
+            <if test="isQqService != null and isQqService != ''">
+                #{isQqService},
+            </if>
+            #{isDeleted}
+        </trim>
+    </insert>
+
+    <!-- 批量更新记录 -->
+    <update id="batchUpdate" parameterType="com.wzitech.gamegold.usermgmt.entity.UserInfoEO">
+        <foreach collection="list" item="item" index="index" separator="OR">
+            UPDATE "zbao_user"
+            <set>
+                <if test="item.loginAccount !=null and item.loginAccount != ''">
+                    "login_account" = #{item.loginAccount},
+                </if>
+                <if test="item.password != null and item.password != ''">
+                    "password" = #{item.password},
+                </if>
+                <if test="item.realName != null and item.realName != ''">
+                    "real_name" = #{item.realName},
+                </if>
+                <if test="item.sex != null">
+                    "sex" = #{item.sex},
+                </if>
+                <if test="item.qq != null">
+                "qq" = #{item.qq},
+               </if>
+                <if test="item.weiXin != null and item.weiXin != ''">
+                    "wei_xin" = #{item.weiXin},
+                </if>
+                <if test="item.phoneNumber != null">
+                    "phone_number" = #{item.phoneNumber},
+                </if>
+                <if test="item.userType != null">
+                    "userType" = #{item.userType},
+                </if>
+                <if test="item.uid != null and item.uid != ''">
+                    "uid" = #{item.uid},
+                </if>
+                <!--<if test="item.isQqService != null and item.isQqService != ''">-->
+                    <!--"is_qq_service" = #{item.isQqService},-->
+                <!--</if>-->
+                "is_qq_service" = #{item.isQqService},
+                "is_deleted" = #{item.isDeleted}
+            </set>
+            <where>
+                "ID" = #{item.id}
+            </where>
+        </foreach>
+    </update>
+
+    <sql id="selectSql">
+        <where>
+            <if test="userType != null">
+                "userType" = #{userType}
+            </if>
+            <if test="loginAccount != null and loginAccount != ''">
+                AND "login_account" LIKE '%'||#{loginAccount}||'%'
+            </if>
+            <if test="realName != null and realName != ''">
+                AND "real_name" LIKE '%'||#{realName}||'%'
+            </if>
+            <if test="isDeleted != null">
+                AND "is_deleted" = #{isDeleted}
+            </if>
+            <if test="id != null">
+                AND "ID"= #{id}
+            </if>
+            <if test="date != null">
+                ${value}
+            </if>
+        </where>
+    </sql>
+
+    <!-- 查询符合条件的实体对象 -->
+    <select id="selectByMap" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.gamegold.usermgmt.entity.UserInfoEO">
+        SELECT * FROM "zbao_user"
+        <include refid="selectSql"/>
+        <if test="ORDERBY != null and ORDERBY != ''">
+            ORDER BY "${ORDERBY}"
+        </if>
+        <if test="ORDER != null and ORDER != ''">
+            ${ORDER}
+        </if>
+        <if test="limit != null">
+            LIMIT #{limit}
+        </if>
+        <if test="start != null">
+            OFFSET #{start}
+        </if>
+    </select>
+
+    <!-- 统计符合条件的实体对象个数 -->
+    <select id="countByMap" parameterType="map" resultType="int">
+        SELECT COUNT(1) FROM "zbao_user"
+        <include refid="selectSql"/>
+    </select>
+
+    <!-- 查询符合条件的实体对象 -->
+    <select id="selectUserByMap" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.gamegold.usermgmt.entity.UserInfoEO">
+        SELECT * FROM "zbao_user"
+        <include refid="selectUserSql"/>
+        <if test="ORDERBY != null and ORDERBY != ''">
+            ORDER BY "${ORDERBY}"
+        </if>
+        <if test="ORDER != null and ORDER != ''">
+            ${ORDER}
+        </if>
+        <if test="limit != null">
+            LIMIT #{limit}
+        </if>
+        <if test="start != null">
+            OFFSET #{start}
+        </if>
+    </select>
+
+    <!-- 统计符合条件的实体对象个数 -->
+    <select id="countUserByMap" parameterType="map" resultType="int">
+        SELECT COUNT(1) FROM "zbao_user"
+        <include refid="selectUserSql"/>
+    </select>
+
+    <!-- 查询符合条件的唯一记录 -->
+    <select id="selectUniqueByProp" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.gamegold.usermgmt.entity.UserInfoEO">
+        SELECT * FROM "zbao_user"
+        <where>
+            <if test="id != null">
+                "ID" = #{id}
+            </if>
+            <if test="loginAccount != null and loginAccount != ''">
+                "login_account" = #{loginAccount}
+            </if>
+            <if test="realName != null and realName != ''">
+                "real_name" = #{realName}
+            </if>
+            <if test="phoneNumber != null and phoneNumber != ''">
+                "phone_number" = #{phoneNumber}
+            </if>
+            <if test="isQqService != null and isQqService != ''">
+                "is_qq_service" = #{isQqService}
+            </if>
+        </where>
+    </select>
+
+    <!--340096 0810-->
+    <sql id="selectUserSql">
+        <where>
+            <if test="loginAccount != null and loginAccount != ''">
+                AND "LOGIN_ACCOUNT" LIKE '%'||#{loginAccount}||'%'
+            </if>
+            <if test="realName != null and realName != ''">
+                AND "REAL_NAME" LIKE '%'||#{realName}||'%'
+            </if>
+            <if test="isDeleted != null">
+                AND "is_deleted" = #{isDeleted}
+            </if>
+
+        </where>
+    </sql>
+
+
+    <select id="selectByQq"  resultMap="BaseResultMap">
+        SELECT * FROM zbao_user WHERE is_qq_service = false OR is_qq_service=null limit 1
+    </select>
+
+    <!-- 根据原生Sql查询记录 -->
+    <select id="selectByNativeSql" parameterType="String" resultMap="BaseResultMap"
+            resultType="com.wzitech.gamegold.usermgmt.entity.UserInfoEO">
+		 ${value}
+	</select>
+
+    <select id="selectUserById" parameterType="long" resultMap="BaseResultMap">
+		SELECT * from "zbao_user" where "ID" = #{id}
+	</select>
+</mapper>

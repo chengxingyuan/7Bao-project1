@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--E:\7bao\branches\7Bao-project\usermgmt\src\main\resources\META-INF\mapper\SevenBaoAccountInfoMapper.xml-->
+<mapper namespace="com.wzitech.Z7Bao.frontend.entity.ZbaoServiceAmountConfig">
+
+    <resultMap id="BaseResultMap" type="com.wzitech.Z7Bao.frontend.entity.ZbaoServiceAmountConfig">
+        <result column="id" property="id"/>
+        <result column="minServiceAmount" property="minServiceAmount"/>
+        <result column="maxServiceAmount" property="maxServiceAmount"/>
+        <result column="minAmount" property="minAmount"/>
+        <result column="maxAmount" property="maxAmount"/>
+        <result column="rate" property="rate"/>
+    </resultMap>
+
+
+    <insert id="insert" parameterType="com.wzitech.Z7Bao.frontend.entity.ZbaoServiceAmountConfig"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into zbao_service_amount_config
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="minServiceAmount != null">
+                "minServiceAmount",
+            </if>
+            <if test="maxServiceAmount != null">
+                "maxServiceAmount",
+            </if>
+            <if test="minAmount != null ">
+                "minAmount",
+            </if>
+            <if test="maxAmount != null">
+                "maxAmount",
+            </if>
+            <if test="rate != null">
+                "rate"
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="minServiceAmount != null">
+                #{minServiceAmount},
+            </if>
+            <if test="maxServiceAmount != null">
+                #{maxServiceAmount},
+            </if>
+            <if test="minAmount != null ">
+                #{minAmount},
+            </if>
+            <if test="maxAmount != null">
+                #{maxAmount},
+            </if>
+            <if test="rate != null">
+                #{rate}
+            </if>
+        </trim>
+    </insert>
+
+
+    <sql id="selectSql">
+        <where>
+            <if test="minServiceAmount != null">
+                AND "minServiceAmount" = #{minServiceAmount}
+            </if>
+            <if test="maxServiceAmount != null">
+                AND "maxServiceAmount"= #{maxServiceAmount}
+            </if>
+            <if test="minAmount != null">
+                AND "minAmount"= #{minAmount}
+            </if>
+            <if test="maxAmount != null">
+                AND "maxAmount"= #{maxAmount}
+            </if>
+            <if test="rate != null">
+                AND "rate"= #{rate}
+            </if>
+        </where>
+    </sql>
+
+
+    <!-- 查询符合条件的实体对象 -->
+    <select id="selectByMap" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.Z7Bao.frontend.entity.ZbaoServiceAmountConfig">
+        SELECT * FROM "zbao_service_amount_config"
+        <include refid="selectSql"/>
+        <if test="ORDERBY != null and ORDERBY != ''">
+            ORDER BY "${ORDERBY}"
+        </if>
+        <if test="ORDER != null and ORDER != ''">
+            ${ORDER}
+        </if>
+        <if test="limit != null">
+            LIMIT #{limit}
+        </if>
+        <if test="start != null">
+            OFFSET #{start}
+        </if>
+    </select>
+
+    <select id="selectById" parameterType="long" resultMap="BaseResultMap">
+        SELECT * FROM zbao_service_amount_config WHERE id = #{id}
+    </select>
+    <!-- 统计符合条件的实体对象个数 -->
+    <select id="countByMap" parameterType="map" resultType="int">
+        SELECT COUNT(1) FROM "zbao_service_amount_config"
+        <include refid="selectSql"/>
+    </select>
+
+    <delete id="batchDeleteByIds" parameterType="list">
+        DELETE FROM zbao_service_amount_config WHERE id IN
+        <foreach collection="list" item="item" open="(" separator=","
+                 close=")">
+            #{item}
+        </foreach>
+    </delete>
+    <!-- 查询符合条件的唯一记录 -->
+    <select id="selectUniqueByProp" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.Z7Bao.frontend.entity.ZbaoServiceAmountConfig">
+        SELECT * FROM "zbao_service_amount_config"
+        <where>
+            <if test="id != null">
+                "id" = #{id}
+            </if>
+        </where>
+    </select>
+
+    <!-- 批量更新记录 -->
+    <update id="batchUpdate"
+            parameterType="com.wzitech.Z7Bao.frontend.entity.ZbaoServiceAmountConfig">
+        <foreach collection="list" item="item" index="index"
+                 separator=";">
+            update zbao_service_amount_config
+            <set>
+                <if test="item.minServiceAmount != null">
+                    "minServiceAmount"= #{item.minServiceAmount},
+                </if>
+                <if test="item.maxServiceAmount != null">
+                    "maxServiceAmount"=#{item.maxServiceAmount},
+                </if>
+                <if test="item.minAmount != null">
+                    "minAmount"= #{item.minAmount},
+                </if>
+                <if test="item.maxAmount != null">
+                    "maxAmount"= #{item.maxAmount},
+                </if>
+                <if test="item.rate != null">
+                    "rate"= #{item.rate}
+                </if>
+            </set>
+            <trim prefix="WHERE" prefixOverrides="AND |OR ">
+                <if test="item.id != null">
+                    AND id = #{item.id}
+                </if>
+            </trim>
+        </foreach>
+    </update>
+
+    <update id="updateRate" parameterType="com.wzitech.Z7Bao.frontend.entity.ZbaoServiceAmountConfig">
+            update zbao_service_amount_config SET rate =  #{rate} WHERE id != #{id} ;
+    </update>
+
+    <select id="selectMaxAndMin"  resultType="java.util.Map">
+        SELECT "minAmount","maxAmount","minServiceAmount","maxServiceAmount","rate" FROM zbao_service_amount_config ORDER BY "minAmount" ASC
+    </select>
+
+
+</mapper>

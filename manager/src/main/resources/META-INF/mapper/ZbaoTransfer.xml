@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wzitech.Z7Bao.frontend.entity.ZbaoTransfer">
+    <resultMap id="BaseResultMap" type="com.wzitech.Z7Bao.frontend.entity.ZbaoTransfer">
+        <result column="id" jdbcType="BIGINT" property="id"/>
+        <result column="order_id" jdbcType="VARCHAR" property="orderId"/>
+        <result column="login_account" jdbcType="VARCHAR" property="loginAccount"/>
+        <result column="sh_order_id" jdbcType="VARCHAR" property="shOrderId"/>
+        <result column="amount" jdbcType="NUMERIC" property="amount"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="deal_time" jdbcType="TIMESTAMP" property="dealTime"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="com.wzitech.Z7Bao.frontend.entity.ZbaoTransfer">
+        insert into zbao_transfer
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="orderId != null and orderId != ''">
+                order_id,
+            </if>
+            <if test="loginAccount != null and loginAccount != ''">
+                login_account,
+            </if>
+            <if test="shOrderId != null and shOrderId != ''">
+                sh_order_id,
+            </if>
+            <if test="amount != null and amount != ''">
+                amount,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="dealTime != null">
+                deal_time
+            </if>
+        </trim>
+
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="orderId != null and orderId != ''">
+                #{orderId},
+            </if>
+            <if test="loginAccount != null and loginAccount != ''">
+                #{loginAccount},
+            </if>
+            <if test="shOrderId != null and shOrderId != ''">
+                #{shOrderId},
+            </if>
+            <if test="amount != null and amount != ''">
+                #{amount},
+            </if>
+            <if test="status != null">
+                #{status},
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+            <if test="dealTime != null">
+                #{dealTime}
+            </if>
+        </trim>
+    </insert>
+
+    <!-- 查询符合条件的实体对象 -->
+    <select id="selectByMap" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.Z7Bao.frontend.entity.ZbaoTransfer">
+        SELECT * FROM zbao_transfer
+        <include refid="selectSql"/>
+        <if test="ORDERBY != null and ORDERBY != ''">
+            ORDER BY "${ORDERBY}"
+        </if>
+        <if test="ORDER != null and ORDER != ''">
+            ${ORDER}
+        </if>
+        <if test="limit != null">
+            LIMIT #{limit}
+        </if>
+        <if test="start != null">
+            OFFSET #{start}
+        </if>
+    </select>
+
+
+    <!--selectLoginAccount-->
+    <!-- 查询符合条件的实体对象 -->
+    <select id="selectLoginAccount" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.Z7Bao.frontend.entity.ZbaoTransfer">
+        SELECT * FROM zbao_transfer where login_account = #{loginAccount} AND order_id=#{orderId}
+    </select>
+
+    <update id="batchUpdate" parameterType="com.wzitech.Z7Bao.frontend.entity.ZbaoTransfer">
+        <foreach collection="list" item="item" index="index" separator="OR">
+            UPDATE zbao_transfer
+            <set>
+                <if test="item.orderId != null and item.orderId != ''">
+                    "order_id" = #{item.orderId},
+                </if>
+                <if test="item.loginAccount != null and item.loginAccount != ''">
+                    "login_account" = #{item.loginAccount},
+                </if>
+                <if test="item.shOrderId != null and item.shOrderId != ''">
+                    "sh_order_id" = #{item.shOrderId},
+                </if>
+                <if test="item.orderId != null and item.orderId != ''">
+                    "order_id" = #{item.orderId},
+                </if>
+                <if test="item.amount != null">
+                    "amount" = #{item.amount},
+                </if>
+                <if test="item.status != null">
+                    "status" = #{item.status},
+                </if>
+                <if test="item.dealTime != null">
+                    "deal_time" = #{item.dealTime},
+                </if>
+                <if test="item.createTime != null">
+                    "create_time" = #{item.createTime},
+                </if>
+                <if test="item.orderType != null ">
+                    "order_type" = #{item.orderType},
+                </if>
+            </set>
+            <where>
+                "id" = #{item.id}
+            </where>
+        </foreach>
+    </update>
+
+    <select id="countByMap" parameterType="map" resultType="int">
+        SELECT COUNT(1) FROM zbao_transfer
+        <include refid="selectSql"/>
+    </select>
+
+    <sql id="selectSql">
+        <where>
+            <if test="id != null">
+                and id = #{id}
+            </if>
+            <if test="orderId != null and orderId != ''">
+                and order_id = #{orderId}
+            </if>
+            <if test="loginAccount != null and loginAccount != ''">
+                and login_account = #{loginAccount}
+            </if>
+            <if test="shOrderId != null and shOrderId != ''">
+                and sh_order_id = #{shOrderId}
+            </if>
+            <if test="amount != null and amount != ''">
+                and amount = #{amount}
+            </if>
+            <if test="status != null and status != ''">
+                and status = #{status}
+            </if>
+            <if test="startTime != null">
+                <![CDATA[
+                and create_time >= #{startTime}
+                ]]>
+            </if>
+            <if test="endTime != null">
+                <![CDATA[
+                and create_time <= #{endTime}
+                ]]>
+            </if>
+            <if test="dealTime != null">
+                and deal_time = #{dealTime}
+            </if>
+        </where>
+    </sql>
+</mapper>

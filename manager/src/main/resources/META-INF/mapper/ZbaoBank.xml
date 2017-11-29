@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wzitech.Z7Bao.frontend.entity.ZbaoBank">
+    <resultMap id="BaseResultMap" type="com.wzitech.Z7Bao.frontend.entity.ZbaoBank">
+        <result column="id" property="id" javaType="long"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="img_url" property="imgUrl" jdbcType="VARCHAR"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP"/>
+        <result column="enable" property="enable" jdbcType="BOOLEAN"/>
+        <result column="code" property="code" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <!-- 新增记录 -->
+    <insert id="insert"
+            parameterType="com.wzitech.Z7Bao.frontend.entity.ZbaoBank"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into zbao_bank
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="name != null and name!=''">
+                name,
+            </if>
+            <if test="imgUrl != null and imgUrl != ''">
+                img_url,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="enable != null">
+                enable
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id},
+            </if>
+            <if test="name != null">
+                #{name},
+            </if>
+            <if test="imgUrl != null and imgUrl != ''">
+                #{imgUrl},
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+            <if test="enable != null">
+                #{enable}
+            </if>
+        </trim>
+    </insert>
+
+    <!-- 批量更新记录 -->
+    <update id="batchUpdate"
+            parameterType="com.wzitech.Z7Bao.frontend.entity.ZbaoBank">
+        <foreach collection="list" item="item" index="index"
+                 separator=";">
+            update zbao_bank
+            <set>
+                <if test="item.name != null and item.name != ''">
+                    name= #{item.name},
+                </if>
+                <if test="item.imgUrl != null and item.imgUrl != ''">
+                    img_url=#{item.imgUrl},
+                </if>
+                <if test="item.enable != null">
+                    enable= #{item.enable}
+                </if>
+            </set>
+            <trim prefix="WHERE" prefixOverrides="AND |OR ">
+                <if test="item.id != null">
+                    AND id = #{item.id}
+                </if>
+            </trim>
+        </foreach>
+    </update>
+
+    <sql id="selectSql">
+        <where>
+            <if test="id != null">
+                id = #{id}
+            </if>
+            <if test="name != null">
+                name = #{name}
+            </if>
+            <if test="bankImg != null and bankImg != ''">
+                bank_img = #{bankImg}
+            </if>
+            <if test="createTime != null ">
+                create_time = #{createTime}
+            </if>
+            <if test="enable != null ">
+                enable = #{enable}
+            </if>
+        </where>
+    </sql>
+
+    <!-- 查询符合条件的实体对象 -->
+    <select id="selectByMap" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.Z7Bao.frontend.entity.ZbaoBank">
+        SELECT * FROM zbao_bank
+        <include refid="selectSql"/>
+        <if test="ORDERBY != null and ORDERBY != ''">
+            ORDER BY ${ORDERBY}
+        </if>
+        <if test="ORDER != null and ORDER != ''">
+            ${ORDER}
+        </if>
+        <if test="limit != null">
+            limit #{limit}
+        </if>
+        <if test="start != null">
+            offset #{start}
+        </if>
+        <if test="isLocked">
+            FOR UPDATE
+        </if>
+    </select>
+
+    <!-- 查询符合条件的实体对象 -->
+    <select id="countByMap" parameterType="string" resultType="int">
+        SELECT COUNT(1) FROM zbao_bank
+        <include refid="selectSql"/>
+    </select>
+
+    <select id="selectById" parameterType="long" resultMap="BaseResultMap">
+        SELECT * FROM zbao_bank WHERE id = #{id}
+    </select>
+
+    <!--selectLoginAccount-->
+    <!-- 查询符合条件的实体对象 -->
+    <select id="selectByName" parameterType="map" resultMap="BaseResultMap"
+            resultType="com.wzitech.Z7Bao.frontend.entity.ZbaoBank">
+        SELECT * FROM zbao_bank where code = #{code}
+    </select>
+
+    <!-- 查询符合条件的对象集合 -->
+    <select id="selectBankName" resultType="java.util.Map" >
+        SELECT "code","img_url","name" FROM zbao_bank where enable = TRUE
+    </select>
+
+
+
+    <delete id="batchDeleteByIds" parameterType="list">
+        DELETE FROM zbao_bank WHERE id IN
+        <foreach collection="list" item="item" open="(" separator=","
+                 close=")">
+            #{item}
+        </foreach>
+    </delete>
+</mapper>

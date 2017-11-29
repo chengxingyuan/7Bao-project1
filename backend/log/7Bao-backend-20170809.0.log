@@ -1,0 +1,243 @@
+2017-08-08 14:44:53,823 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-08 14:44:53,886 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 08 14:44:53 CST 2017]; root of context hierarchy
+2017-08-08 14:44:53,929 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-08 14:44:54,077 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-08 14:44:54,204 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-dao-context.xml]
+2017-08-08 14:44:54,232 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-business-context.xml]
+2017-08-08 14:44:54,238 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-service-context.xml]
+2017-08-08 14:44:54,574 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.properties]
+2017-08-08 14:44:54,575 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.develop.properties]
+2017-08-08 14:44:54,575 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.local.properties]
+2017-08-08 14:44:54,575 [WARN ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Could not load properties from class path resource [META-INF/application.local.properties]: class path resource [META-INF/application.local.properties] cannot be opened because it does not exist
+2017-08-08 14:44:54,580 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from URL [file:/D:/Personal/Desktop/学习目标/源码文档/spring-cloud-7simple-master/Myspring-cloud-7simple-master/7Bao-project/backend/target/classes/META-INF/application.mybatis.properties]
+2017-08-08 14:44:54,642 [INFO ] o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@114d55a: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,loginAction,usersGameAction,authenticationInterceptor,gameInfoRedisDAOImpl,gameInfoManagerImpl,authOutInterceptor,logManagerImpl,logDBDAOImpl,eucpMobileMsgImpl,servicerOrderManagerImpl,tradeOrderManagerImpl,userInfoServiceImpl,gameUserManagerImpl,accountManagerImpl,authenticationImpl,servicerVoteConfigManagerImpl,servicerVoteManagerImpl,sessionManagerImpl,userInfoManagerImpl,usersGameManagerImpl,servicerVoteConfigDBDAO,servicerVoteDBDAOImpl,userInfoDBDAOImpl,usersGameDBDAOImpl,servicerVoteRedisDAOImpl,userInfoRedisDAOImpl,verifyCodeRedisDAOImpl,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,transactionManager,sqlSessionFactory,userJedisFactory,userRedisTemplate,dataSource,insuranceService.proxyFactory,insuranceService,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2017-08-08 14:44:55,120 [INFO ] c.w.c.f.s.d.m.p.OffsetLimitInterceptor - MyBatis OffsetLimitInterceptor Dialect is com.wzitech.chaos.framework.server.dataaccess.dialect.PostgreSQLDialect
+2017-08-08 14:44:55,358 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1530 ms
+2017-08-08 14:44:55,524 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-default.xml]
+2017-08-08 14:44:55,579 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-plugin.xml]
+2017-08-08 14:44:55,586 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts.xml]
+2017-08-08 14:44:55,590 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2017-08-08 14:44:55,590 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2017-08-08 14:44:55,590 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2017-08-08 14:44:55,590 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2017-08-08 14:44:55,590 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2017-08-08 14:44:55,590 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2017-08-08 14:44:55,590 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2017-08-08 14:44:55,590 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2017-08-08 14:44:55,590 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2017-08-08 14:44:55,592 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2017-08-08 14:44:55,592 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2017-08-08 14:44:55,592 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2017-08-08 14:44:55,592 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2017-08-08 14:44:55,592 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2017-08-08 14:44:55,592 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2017-08-08 14:44:55,592 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2017-08-08 14:44:55,593 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2017-08-08 14:44:55,593 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2017-08-08 14:44:55,595 [INFO ] o.a.s.config.BeanSelectionProvider - Loading global messages from i18n/framework-messages
+2017-08-08 14:44:55,605 [INFO ] o.a.s.s.StrutsSpringObjectFactory - Initializing Struts-Spring integration...
+2017-08-08 14:44:55,606 [INFO ] c.o.x.spring.SpringObjectFactory - Setting autowire strategy to name
+2017-08-08 14:44:55,606 [INFO ] o.a.s.s.StrutsSpringObjectFactory - ... initialized Struts-Spring integration successfully
+2017-08-08 14:46:07,413 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：jyx@5173.com
+2017-08-08 14:46:14,186 [WARN ] o.a.struts2.dispatcher.Dispatcher - Could not find action or result
+com.opensymphony.xwork2.config.ConfigurationException: 没有映射的Action命名空间[/]和action名称[currentLoginUserInfo]关联的上下文路径[/backend]。
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185) ~[xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63) ~[struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58) ~[xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:501) ~[struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+2017-08-08 14:46:33,584 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：jyx@5173.com
+2017-08-08 14:46:34,455 [WARN ] o.a.struts2.dispatcher.Dispatcher - Could not find action or result
+com.opensymphony.xwork2.config.ConfigurationException: 没有映射的Action命名空间[/]和action名称[currentLoginUserInfo]关联的上下文路径[/backend]。
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185) ~[xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63) ~[struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58) ~[xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:501) ~[struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+2017-08-08 14:52:48,475 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-08 14:52:48,565 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 08 14:52:48 CST 2017]; root of context hierarchy
+2017-08-08 14:52:48,632 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-08 14:52:48,752 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-08 14:52:48,893 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-dao-context.xml]
+2017-08-08 14:52:48,920 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-business-context.xml]
+2017-08-08 14:52:48,925 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-service-context.xml]
+2017-08-08 14:52:49,250 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.properties]
+2017-08-08 14:52:49,251 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.develop.properties]
+2017-08-08 14:52:49,251 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.local.properties]
+2017-08-08 14:52:49,252 [WARN ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Could not load properties from class path resource [META-INF/application.local.properties]: class path resource [META-INF/application.local.properties] cannot be opened because it does not exist
+2017-08-08 14:52:49,256 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from URL [file:/D:/Personal/Desktop/学习目标/源码文档/spring-cloud-7simple-master/Myspring-cloud-7simple-master/7Bao-project/backend/target/classes/META-INF/application.mybatis.properties]
+2017-08-08 14:52:49,331 [INFO ] o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@15d3640: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,loginAction,mainAction,usersGameAction,authenticationInterceptor,gameInfoRedisDAOImpl,gameInfoManagerImpl,authOutInterceptor,logManagerImpl,logDBDAOImpl,eucpMobileMsgImpl,servicerOrderManagerImpl,tradeOrderManagerImpl,userInfoServiceImpl,gameUserManagerImpl,accountManagerImpl,authenticationImpl,servicerVoteConfigManagerImpl,servicerVoteManagerImpl,sessionManagerImpl,userInfoManagerImpl,usersGameManagerImpl,servicerVoteConfigDBDAO,servicerVoteDBDAOImpl,userInfoDBDAOImpl,usersGameDBDAOImpl,servicerVoteRedisDAOImpl,userInfoRedisDAOImpl,verifyCodeRedisDAOImpl,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,transactionManager,sqlSessionFactory,userJedisFactory,userRedisTemplate,dataSource,insuranceService.proxyFactory,insuranceService,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2017-08-08 14:52:49,776 [INFO ] c.w.c.f.s.d.m.p.OffsetLimitInterceptor - MyBatis OffsetLimitInterceptor Dialect is com.wzitech.chaos.framework.server.dataaccess.dialect.PostgreSQLDialect
+2017-08-08 14:52:50,029 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1551 ms
+2017-08-08 14:52:50,169 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-default.xml]
+2017-08-08 14:52:50,231 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-plugin.xml]
+2017-08-08 14:52:50,239 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts.xml]
+2017-08-08 14:52:50,241 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2017-08-08 14:52:50,242 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2017-08-08 14:52:50,242 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2017-08-08 14:52:50,242 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2017-08-08 14:52:50,242 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2017-08-08 14:52:50,242 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2017-08-08 14:52:50,242 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2017-08-08 14:52:50,242 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2017-08-08 14:52:50,242 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2017-08-08 14:52:50,244 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2017-08-08 14:52:50,245 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2017-08-08 14:52:50,245 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2017-08-08 14:52:50,245 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2017-08-08 14:52:50,245 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2017-08-08 14:52:50,245 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2017-08-08 14:52:50,245 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2017-08-08 14:52:50,245 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2017-08-08 14:52:50,245 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2017-08-08 14:52:50,247 [INFO ] o.a.s.config.BeanSelectionProvider - Loading global messages from i18n/framework-messages
+2017-08-08 14:52:50,257 [INFO ] o.a.s.s.StrutsSpringObjectFactory - Initializing Struts-Spring integration...
+2017-08-08 14:52:50,257 [INFO ] c.o.x.spring.SpringObjectFactory - Setting autowire strategy to name
+2017-08-08 14:52:50,257 [INFO ] o.a.s.s.StrutsSpringObjectFactory - ... initialized Struts-Spring integration successfully
+2017-08-08 14:53:05,849 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：jyx@5173.com
+2017-08-08 14:53:06,228 [WARN ] o.a.struts2.dispatcher.Dispatcher - Could not find action or result
+com.opensymphony.xwork2.config.ConfigurationException: 没有映射的Action命名空间[/]和action名称[currentLoginUserInfo]关联的上下文路径[/backend]。
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185) ~[xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63) ~[struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58) ~[xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:501) ~[struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+2017-08-08 14:56:27,896 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-08 14:56:27,961 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 08 14:56:27 CST 2017]; root of context hierarchy
+2017-08-08 14:56:28,000 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-08 14:56:28,109 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-08 14:56:28,242 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-dao-context.xml]
+2017-08-08 14:56:28,271 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-business-context.xml]
+2017-08-08 14:56:28,277 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-service-context.xml]
+2017-08-08 14:56:28,588 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.properties]
+2017-08-08 14:56:28,589 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.develop.properties]
+2017-08-08 14:56:28,589 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.local.properties]
+2017-08-08 14:56:28,589 [WARN ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Could not load properties from class path resource [META-INF/application.local.properties]: class path resource [META-INF/application.local.properties] cannot be opened because it does not exist
+2017-08-08 14:56:28,593 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from URL [file:/D:/Personal/Desktop/学习目标/源码文档/spring-cloud-7simple-master/Myspring-cloud-7simple-master/7Bao-project/backend/target/classes/META-INF/application.mybatis.properties]
+2017-08-08 14:56:28,655 [INFO ] o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a83821: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,loginAction,mainAction,usersGameAction,authenticationInterceptor,gameInfoRedisDAOImpl,gameInfoManagerImpl,authOutInterceptor,logManagerImpl,logDBDAOImpl,eucpMobileMsgImpl,servicerOrderManagerImpl,tradeOrderManagerImpl,userInfoServiceImpl,gameUserManagerImpl,accountManagerImpl,authenticationImpl,servicerVoteConfigManagerImpl,servicerVoteManagerImpl,sessionManagerImpl,userInfoManagerImpl,usersGameManagerImpl,servicerVoteConfigDBDAO,servicerVoteDBDAOImpl,userInfoDBDAOImpl,usersGameDBDAOImpl,servicerVoteRedisDAOImpl,userInfoRedisDAOImpl,verifyCodeRedisDAOImpl,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,transactionManager,sqlSessionFactory,userJedisFactory,userRedisTemplate,dataSource,insuranceService.proxyFactory,insuranceService,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2017-08-08 14:56:29,104 [INFO ] c.w.c.f.s.d.m.p.OffsetLimitInterceptor - MyBatis OffsetLimitInterceptor Dialect is com.wzitech.chaos.framework.server.dataaccess.dialect.PostgreSQLDialect
+2017-08-08 14:56:29,344 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1445 ms
+2017-08-08 14:56:29,492 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-default.xml]
+2017-08-08 14:56:29,543 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-plugin.xml]
+2017-08-08 14:56:29,552 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts.xml]
+2017-08-08 14:56:29,555 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2017-08-08 14:56:29,556 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2017-08-08 14:56:29,556 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2017-08-08 14:56:29,556 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2017-08-08 14:56:29,556 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2017-08-08 14:56:29,556 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2017-08-08 14:56:29,556 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2017-08-08 14:56:29,556 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2017-08-08 14:56:29,556 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2017-08-08 14:56:29,558 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2017-08-08 14:56:29,558 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2017-08-08 14:56:29,558 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2017-08-08 14:56:29,558 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2017-08-08 14:56:29,559 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2017-08-08 14:56:29,559 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2017-08-08 14:56:29,559 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2017-08-08 14:56:29,559 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2017-08-08 14:56:29,559 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2017-08-08 14:56:29,561 [INFO ] o.a.s.config.BeanSelectionProvider - Loading global messages from i18n/framework-messages
+2017-08-08 14:56:29,572 [INFO ] o.a.s.s.StrutsSpringObjectFactory - Initializing Struts-Spring integration...
+2017-08-08 14:56:29,573 [INFO ] c.o.x.spring.SpringObjectFactory - Setting autowire strategy to name
+2017-08-08 14:56:29,573 [INFO ] o.a.s.s.StrutsSpringObjectFactory - ... initialized Struts-Spring integration successfully
+2017-08-08 14:56:45,931 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：jyx@5173.com
+2017-08-08 14:56:46,458 [WARN ] o.a.struts2.dispatcher.Dispatcher - Could not find action or result
+com.opensymphony.xwork2.config.ConfigurationException: 没有映射的Action命名空间[/main]和action名称[sysConfig]关联的上下文路径[/backend]。
+	at com.opensymphony.xwork2.DefaultActionProxy.prepare(DefaultActionProxy.java:185) ~[xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxy.prepare(StrutsActionProxy.java:63) ~[struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxyFactory.createActionProxy(StrutsActionProxyFactory.java:39) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionProxyFactory.createActionProxy(DefaultActionProxyFactory.java:58) ~[xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:501) ~[struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_79]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_79]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_79]
+2017-08-08 15:03:12,064 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：jyx@5173.com
+2017-08-08 15:04:50,500 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：jyx@5173.com
+2017-08-08 15:16:13,975 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：jyx@5173.com
+2017-08-08 16:22:07,302 [INFO ] o.s.test.context.TestContextManager - @TestExecutionListeners is not present for class [class MyTest]: using defaults.
+2017-08-08 16:22:07,409 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-08 16:22:07,535 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-08 16:22:07,690 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-dao-context.xml]
+2017-08-08 16:22:07,720 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-business-context.xml]
+2017-08-08 16:22:07,727 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-service-context.xml]
+2017-08-08 16:22:07,861 [INFO ] o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@191312f: startup date [Tue Aug 08 16:22:07 CST 2017]; root of context hierarchy
+2017-08-08 16:22:08,044 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.properties]
+2017-08-08 16:22:08,045 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.develop.properties]
+2017-08-08 16:22:08,045 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.local.properties]
+2017-08-08 16:22:08,046 [WARN ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Could not load properties from class path resource [META-INF/application.local.properties]: class path resource [META-INF/application.local.properties] cannot be opened because it does not exist
+2017-08-08 16:22:08,050 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from URL [file:/D:/Personal/Desktop/%e5%ad%a6%e4%b9%a0%e7%9b%ae%e6%a0%87/%e6%ba%90%e7%a0%81%e6%96%87%e6%a1%a3/spring-cloud-7simple-master/Myspring-cloud-7simple-master/7Bao-project/backend/target/classes/META-INF/application.mybatis.properties]
+2017-08-08 16:22:08,112 [INFO ] o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c75c22: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,loginAction,mainAction,usersGameAction,authenticationInterceptor,gameInfoRedisDAOImpl,gameInfoManagerImpl,authOutInterceptor,logManagerImpl,logDBDAOImpl,eucpMobileMsgImpl,servicerOrderManagerImpl,tradeOrderManagerImpl,userInfoServiceImpl,gameUserManagerImpl,accountManagerImpl,authenticationImpl,servicerVoteConfigManagerImpl,servicerVoteManagerImpl,sessionManagerImpl,userInfoManagerImpl,usersGameManagerImpl,servicerVoteConfigDBDAO,servicerVoteDBDAOImpl,userInfoDBDAOImpl,usersGameDBDAOImpl,servicerVoteRedisDAOImpl,userInfoRedisDAOImpl,verifyCodeRedisDAOImpl,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,transactionManager,sqlSessionFactory,userJedisFactory,userRedisTemplate,dataSource,insuranceService.proxyFactory,insuranceService,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2017-08-08 16:22:08,563 [INFO ] c.w.c.f.s.d.m.p.OffsetLimitInterceptor - MyBatis OffsetLimitInterceptor Dialect is com.wzitech.chaos.framework.server.dataaccess.dialect.PostgreSQLDialect
+2017-08-08 16:22:09,120 [INFO ] o.s.c.s.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@191312f: startup date [Tue Aug 08 16:22:07 CST 2017]; root of context hierarchy
+2017-08-08 16:22:09,120 [INFO ] o.s.b.f.s.DefaultListableBeanFactory - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c75c22: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,loginAction,mainAction,usersGameAction,authenticationInterceptor,gameInfoRedisDAOImpl,gameInfoManagerImpl,authOutInterceptor,logManagerImpl,logDBDAOImpl,eucpMobileMsgImpl,servicerOrderManagerImpl,tradeOrderManagerImpl,userInfoServiceImpl,gameUserManagerImpl,accountManagerImpl,authenticationImpl,servicerVoteConfigManagerImpl,servicerVoteManagerImpl,sessionManagerImpl,userInfoManagerImpl,usersGameManagerImpl,servicerVoteConfigDBDAO,servicerVoteDBDAOImpl,userInfoDBDAOImpl,usersGameDBDAOImpl,servicerVoteRedisDAOImpl,userInfoRedisDAOImpl,verifyCodeRedisDAOImpl,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,transactionManager,sqlSessionFactory,userJedisFactory,userRedisTemplate,dataSource,insuranceService.proxyFactory,insuranceService,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy

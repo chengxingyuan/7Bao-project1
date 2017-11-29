@@ -1,0 +1,569 @@
+2017-08-15 10:10:07,701 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-15 10:10:07,781 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 15 10:10:07 CST 2017]; root of context hierarchy
+2017-08-15 10:10:07,816 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-15 10:10:07,954 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-15 10:10:08,062 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-dao-context.xml]
+2017-08-15 10:10:08,084 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-business-context.xml]
+2017-08-15 10:10:08,092 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-service-context.xml]
+2017-08-15 10:10:08,315 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.properties]
+2017-08-15 10:10:08,316 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.develop.properties]
+2017-08-15 10:10:08,317 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.local.properties]
+2017-08-15 10:10:08,317 [WARN ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Could not load properties from class path resource [META-INF/application.local.properties]: class path resource [META-INF/application.local.properties] cannot be opened because it does not exist
+2017-08-15 10:10:08,320 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from URL [file:/D:/117bao/branches/7Bao-project/backend/target/classes/META-INF/application.mybatis.properties]
+2017-08-15 10:10:08,356 [INFO ] o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@73fd6f28: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,loginAction,mainAction,sevenBaoAccountAction,userAction,usersGameAction,authenticationInterceptor,authOutInterceptor,logManagerImpl,logDBDAOImpl,eucpMobileMsgImpl,tradeOrderManagerImpl,userInfoServiceImpl,gameUserManagerImpl,accountManagerImpl,authenticationImpl,sessionManagerImpl,sevenBaoAccountManagerImpl,userInfoManagerImpl,usersGameManagerImpl,sevenBaoAccountDBDAOImpl,userInfoDBDAOImpl,usersGameDBDAOImpl,userInfoRedisDAOImpl,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,transactionManager,sqlSessionFactory,userJedisFactory,userRedisTemplate,dataSource,insuranceService.proxyFactory,insuranceService,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2017-08-15 10:10:08,680 [INFO ] c.w.c.f.s.d.m.p.OffsetLimitInterceptor - MyBatis OffsetLimitInterceptor Dialect is com.wzitech.chaos.framework.server.dataaccess.dialect.PostgreSQLDialect
+2017-08-15 10:10:08,840 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1136 ms
+2017-08-15 10:10:08,949 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-default.xml]
+2017-08-15 10:10:08,989 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-plugin.xml]
+2017-08-15 10:10:08,998 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts.xml]
+2017-08-15 10:10:09,001 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2017-08-15 10:10:09,001 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2017-08-15 10:10:09,001 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2017-08-15 10:10:09,001 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2017-08-15 10:10:09,002 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2017-08-15 10:10:09,002 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2017-08-15 10:10:09,002 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2017-08-15 10:10:09,002 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2017-08-15 10:10:09,002 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2017-08-15 10:10:09,003 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2017-08-15 10:10:09,003 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2017-08-15 10:10:09,003 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2017-08-15 10:10:09,003 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2017-08-15 10:10:09,003 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2017-08-15 10:10:09,003 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2017-08-15 10:10:09,003 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2017-08-15 10:10:09,003 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2017-08-15 10:10:09,003 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2017-08-15 10:10:09,005 [INFO ] o.a.s.config.BeanSelectionProvider - Loading global messages from i18n/framework-messages
+2017-08-15 10:10:09,012 [INFO ] o.a.s.s.StrutsSpringObjectFactory - Initializing Struts-Spring integration...
+2017-08-15 10:10:09,012 [INFO ] c.o.x.spring.SpringObjectFactory - Setting autowire strategy to name
+2017-08-15 10:10:09,013 [INFO ] o.a.s.s.StrutsSpringObjectFactory - ... initialized Struts-Spring integration successfully
+2017-08-15 14:15:21,067 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-15 14:15:21,107 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 15 14:15:21 CST 2017]; root of context hierarchy
+2017-08-15 14:15:21,137 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-15 14:15:21,244 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-15 14:15:21,342 [ERROR] o.s.web.context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from relative location [gold-facade-backend-import-context.xml]
+Offending resource: class path resource [META-INF/gold-facade-backend-context.xml]; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [META-INF/gold-facade-backend-import-context.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mainStationKeyRedisDAOImpl' for bean class [com.wzitech.gamegold.usermgmt.dao.redis.impl.MainStationKeyRedisDAOImpl] conflicts with existing, non-compatible bean definition of same name and class [com.wzitech.gamegold.common.dao.redis.MainStationKeyRedisDAOImpl]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:271) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:196) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:181) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:206) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:181) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:527) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:441) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:383) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:283) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [META-INF/gold-facade-backend-import-context.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mainStationKeyRedisDAOImpl' for bean class [com.wzitech.gamegold.usermgmt.dao.redis.impl.MainStationKeyRedisDAOImpl] conflicts with existing, non-compatible bean definition of same name and class [com.wzitech.gamegold.common.dao.redis.MainStationKeyRedisDAOImpl]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:255) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 31 common frames omitted
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mainStationKeyRedisDAOImpl' for bean class [com.wzitech.gamegold.usermgmt.dao.redis.impl.MainStationKeyRedisDAOImpl] conflicts with existing, non-compatible bean definition of same name and class [com.wzitech.gamegold.common.dao.redis.MainStationKeyRedisDAOImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:312) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:253) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 34 common frames omitted
+2017-08-15 14:15:21,362 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Aug 15 14:15:21 CST 2017]; root of context hierarchy
+2017-08-15 14:15:21,362 [WARN ] o.s.w.c.s.XmlWebApplicationContext - Exception thrown from ApplicationListener handling ContextClosedEvent
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: Root WebApplicationContext: startup date [Tue Aug 15 14:15:21 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:337) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:324) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:993) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:548) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:142) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4837) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5483) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-08-15 14:15:21,362 [WARN ] o.s.w.c.s.XmlWebApplicationContext - Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Tue Aug 15 14:15:21 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:350) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1038) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:993) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:548) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:142) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4837) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5483) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-08-15 14:15:58,379 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-15 14:15:58,414 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 15 14:15:58 CST 2017]; root of context hierarchy
+2017-08-15 14:15:58,438 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-15 14:15:58,541 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-15 14:15:58,636 [ERROR] o.s.web.context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from relative location [gold-facade-backend-import-context.xml]
+Offending resource: class path resource [META-INF/gold-facade-backend-context.xml]; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [META-INF/gold-facade-backend-import-context.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mainStationKeyRedisDAOImpl' for bean class [com.wzitech.gamegold.usermgmt.dao.redis.impl.MainStationKeyRedisDAOImpl] conflicts with existing, non-compatible bean definition of same name and class [com.wzitech.gamegold.common.dao.redis.MainStationKeyRedisDAOImpl]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:271) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:196) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:181) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:206) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:181) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:527) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:441) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:383) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:283) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [META-INF/gold-facade-backend-import-context.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mainStationKeyRedisDAOImpl' for bean class [com.wzitech.gamegold.usermgmt.dao.redis.impl.MainStationKeyRedisDAOImpl] conflicts with existing, non-compatible bean definition of same name and class [com.wzitech.gamegold.common.dao.redis.MainStationKeyRedisDAOImpl]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:255) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 31 common frames omitted
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mainStationKeyRedisDAOImpl' for bean class [com.wzitech.gamegold.usermgmt.dao.redis.impl.MainStationKeyRedisDAOImpl] conflicts with existing, non-compatible bean definition of same name and class [com.wzitech.gamegold.common.dao.redis.MainStationKeyRedisDAOImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:312) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:253) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 34 common frames omitted
+2017-08-15 14:15:58,645 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Aug 15 14:15:58 CST 2017]; root of context hierarchy
+2017-08-15 14:15:58,646 [WARN ] o.s.w.c.s.XmlWebApplicationContext - Exception thrown from ApplicationListener handling ContextClosedEvent
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: Root WebApplicationContext: startup date [Tue Aug 15 14:15:58 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:337) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:324) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:993) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:548) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:142) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4837) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5483) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-08-15 14:15:58,646 [WARN ] o.s.w.c.s.XmlWebApplicationContext - Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Tue Aug 15 14:15:58 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:350) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1038) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:993) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:548) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:142) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4837) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5483) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-08-15 14:21:07,927 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-15 14:21:07,964 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 15 14:21:07 CST 2017]; root of context hierarchy
+2017-08-15 14:21:07,987 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-15 14:21:08,089 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-15 14:21:08,187 [ERROR] o.s.web.context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Failed to import bean definitions from relative location [gold-facade-backend-import-context.xml]
+Offending resource: class path resource [META-INF/gold-facade-backend-context.xml]; nested exception is org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [META-INF/gold-facade-backend-import-context.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mainStationKeyRedisDAOImpl' for bean class [com.wzitech.gamegold.usermgmt.dao.redis.impl.MainStationKeyRedisDAOImpl] conflicts with existing, non-compatible bean definition of same name and class [com.wzitech.gamegold.common.dao.redis.MainStationKeyRedisDAOImpl]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:76) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:271) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:196) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:181) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseDefaultElement(DefaultBeanDefinitionDocumentReader.java:206) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:181) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:527) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:441) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:383) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:283) ~[spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:111) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Unexpected exception parsing XML document from class path resource [META-INF/gold-facade-backend-import-context.xml]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mainStationKeyRedisDAOImpl' for bean class [com.wzitech.gamegold.usermgmt.dao.redis.impl.MainStationKeyRedisDAOImpl] conflicts with existing, non-compatible bean definition of same name and class [com.wzitech.gamegold.common.dao.redis.MainStationKeyRedisDAOImpl]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:412) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.importBeanDefinitionResource(DefaultBeanDefinitionDocumentReader.java:255) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 31 common frames omitted
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'mainStationKeyRedisDAOImpl' for bean class [com.wzitech.gamegold.usermgmt.dao.redis.impl.MainStationKeyRedisDAOImpl] conflicts with existing, non-compatible bean definition of same name and class [com.wzitech.gamegold.common.dao.redis.MainStationKeyRedisDAOImpl]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:312) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:253) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.annotation.ComponentScanBeanDefinitionParser.parse(ComponentScanBeanDefinitionParser.java:84) ~[spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1419) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1409) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390) ~[spring-beans-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 34 common frames omitted
+2017-08-15 14:21:08,192 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Tue Aug 15 14:21:07 CST 2017]; root of context hierarchy
+2017-08-15 14:21:08,192 [WARN ] o.s.w.c.s.XmlWebApplicationContext - Exception thrown from ApplicationListener handling ContextClosedEvent
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: Root WebApplicationContext: startup date [Tue Aug 15 14:21:07 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:337) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:324) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1030) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:993) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:548) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:142) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4837) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5483) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-08-15 14:21:08,192 [WARN ] o.s.w.c.s.XmlWebApplicationContext - Exception thrown from LifecycleProcessor on context close
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: Root WebApplicationContext: startup date [Tue Aug 15 14:21:07 CST 2017]; root of context hierarchy
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:350) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1038) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:993) [spring-context-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.closeWebApplicationContext(ContextLoader.java:548) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextDestroyed(ContextLoaderListener.java:142) [spring-web-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4837) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5483) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:160) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-08-15 14:24:33,006 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-15 14:24:33,041 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 15 14:24:33 CST 2017]; root of context hierarchy
+2017-08-15 14:24:33,065 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-15 14:24:33,160 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-15 14:24:33,242 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-dao-context.xml]
+2017-08-15 14:24:33,264 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-business-context.xml]
+2017-08-15 14:24:33,359 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.properties]
+2017-08-15 14:24:33,359 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.develop.properties]
+2017-08-15 14:24:33,360 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.local.properties]
+2017-08-15 14:24:33,360 [WARN ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Could not load properties from class path resource [META-INF/application.local.properties]: class path resource [META-INF/application.local.properties] cannot be opened because it does not exist
+2017-08-15 14:24:33,363 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from URL [file:/D:/117bao/branches/7Bao-project/backend/target/classes/META-INF/application.mybatis.properties]
+2017-08-15 14:24:33,400 [INFO ] o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3041dcc2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,loginAction,mainAction,sevenBaoAccountAction,userAction,usersGameAction,authenticationInterceptor,mainStationKeyRedisDAOImpl,authOutInterceptor,logManagerImpl,logDBDAOImpl,eucpMobileMsgImpl,userInfoServiceImpl,gameUserManagerImpl,accountManagerImpl,authenticationImpl,sessionManagerImpl,sevenBaoAccountManagerImpl,userInfoManagerImpl,usersGameManagerImpl,sevenBaoAccountDBDAOImpl,userInfoDBDAOImpl,usersGameDBDAOImpl,userInfoRedisDAOImpl,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,transactionManager,sqlSessionFactory,userJedisFactory,userRedisTemplate,dataSource,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2017-08-15 14:24:33,640 [INFO ] c.w.c.f.s.d.m.p.OffsetLimitInterceptor - MyBatis OffsetLimitInterceptor Dialect is com.wzitech.chaos.framework.server.dataaccess.dialect.PostgreSQLDialect
+2017-08-15 14:24:33,771 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 763 ms
+2017-08-15 14:24:33,899 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-default.xml]
+2017-08-15 14:24:33,943 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-plugin.xml]
+2017-08-15 14:24:33,952 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts.xml]
+2017-08-15 14:24:33,955 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2017-08-15 14:24:33,955 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2017-08-15 14:24:33,955 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2017-08-15 14:24:33,955 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2017-08-15 14:24:33,955 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2017-08-15 14:24:33,955 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2017-08-15 14:24:33,955 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2017-08-15 14:24:33,955 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2017-08-15 14:24:33,956 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2017-08-15 14:24:33,956 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2017-08-15 14:24:33,957 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2017-08-15 14:24:33,957 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2017-08-15 14:24:33,957 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2017-08-15 14:24:33,957 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2017-08-15 14:24:33,957 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2017-08-15 14:24:33,957 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2017-08-15 14:24:33,957 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2017-08-15 14:24:33,957 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2017-08-15 14:24:33,959 [INFO ] o.a.s.config.BeanSelectionProvider - Loading global messages from i18n/framework-messages
+2017-08-15 14:24:33,967 [INFO ] o.a.s.s.StrutsSpringObjectFactory - Initializing Struts-Spring integration...
+2017-08-15 14:24:33,967 [INFO ] c.o.x.spring.SpringObjectFactory - Setting autowire strategy to name
+2017-08-15 14:24:33,967 [INFO ] o.a.s.s.StrutsSpringObjectFactory - ... initialized Struts-Spring integration successfully
+2017-08-15 14:24:45,679 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：admin@5173.com
+2017-08-15 14:50:00,959 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：admin@5173.com
+2017-08-15 14:50:00,965 [ERROR] c.w.Z.b.i.ExceptionInterceptor - [异常]Action:LoginAction,Method:index,Params:{"doLogin":["true"],"loginAccount":["admin@5173.com"],"password":["123456"]},Message:null
+java.lang.NullPointerException: null
+	at com.wzitech.Z7Bao.backend.action.LoginAction.index(LoginAction.java:54) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeAction(DefaultActionInvocation.java:453) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invokeActionOnly(DefaultActionInvocation.java:292) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:255) [xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.json.JSONInterceptor.intercept(JSONInterceptor.java:172) ~[struts2-json-plugin-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.interceptor.debugging.DebuggingInterceptor.intercept(DebuggingInterceptor.java:256) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.DefaultWorkflowInterceptor.doIntercept(DefaultWorkflowInterceptor.java:176) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265) ~[xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:68) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:211) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:211) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:190) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:75) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:90) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:243) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:176) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164) ~[struts2-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:192) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:187) ~[xwork-core-2.3.4.jar:2.3.4]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.wzitech.Z7Bao.backend.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:80) ~[classes/:na]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.wzitech.Z7Bao.backend.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:56) ~[classes/:na]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:511) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-08-15 14:50:24,210 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：admin@5173.com
+2017-08-15 14:50:30,157 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：admin@5173.com
+2017-08-15 14:50:30,329 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：admin@5173.com
+2017-08-15 14:50:43,923 [ERROR] c.w.Z.b.i.ExceptionInterceptor - [异常]Action:UserAction,Method:modifyUser,Params:{"qq":["181123456"],"loginAccount":["test@5173.com"],"sex":["1"],"user.loginAccount":["test@5173.com"],"user.password":["C9juIuxHzp3wTsnOMP4Ki1PiDiI="],"user.realName":["test@5173.com"],"user.sex":["1"],"user.phoneNumber":["18112345678"],"realName":["test@5173.com"],"password":["C9juIuxHzp3wTsnOMP4Ki1PiDiI="],"weiXin":["23291541"],"phoneNumber":["18112345678"],"user.qq":["181123456"],"id":["2"],"user.weiXin":["23291541"]},Message:null
+java.lang.NullPointerException: null
+	at com.wzitech.Z7Bao.backend.interceptor.AuthenticationInterceptor.intercept(AuthenticationInterceptor.java:56) ~[classes/:na]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at com.wzitech.Z7Bao.backend.interceptor.ExceptionInterceptor.intercept(ExceptionInterceptor.java:56) ~[classes/:na]
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:249) [xwork-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:511) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:77) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:91) [struts2-core-2.3.4.jar:2.3.4]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312) [tomcat-embed-core-7.0.37.jar:7.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_121]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_121]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_121]
+2017-08-15 15:07:01,765 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-15 15:07:01,806 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 15 15:07:01 CST 2017]; root of context hierarchy
+2017-08-15 15:07:01,834 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-15 15:07:02,018 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-15 15:07:02,100 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-dao-context.xml]
+2017-08-15 15:07:02,123 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-business-context.xml]
+2017-08-15 15:07:02,218 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.properties]
+2017-08-15 15:07:02,219 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.develop.properties]
+2017-08-15 15:07:02,219 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.local.properties]
+2017-08-15 15:07:02,220 [WARN ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Could not load properties from class path resource [META-INF/application.local.properties]: class path resource [META-INF/application.local.properties] cannot be opened because it does not exist
+2017-08-15 15:07:02,223 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from URL [file:/D:/117bao/branches/7Bao-project/backend/target/classes/META-INF/application.mybatis.properties]
+2017-08-15 15:07:02,258 [INFO ] o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@52a7826d: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,loginAction,mainAction,sevenBaoAccountAction,userAction,usersGameAction,authenticationInterceptor,mainStationKeyRedisDAOImpl,authOutInterceptor,logManagerImpl,logDBDAOImpl,eucpMobileMsgImpl,userInfoServiceImpl,gameUserManagerImpl,accountManagerImpl,authenticationImpl,sessionManagerImpl,sevenBaoAccountManagerImpl,userInfoManagerImpl,usersGameManagerImpl,sevenBaoAccountDBDAOImpl,userInfoDBDAOImpl,usersGameDBDAOImpl,userInfoRedisDAOImpl,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,transactionManager,sqlSessionFactory,userJedisFactory,userRedisTemplate,dataSource,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2017-08-15 15:07:02,435 [INFO ] c.w.c.f.s.d.m.p.OffsetLimitInterceptor - MyBatis OffsetLimitInterceptor Dialect is com.wzitech.chaos.framework.server.dataaccess.dialect.PostgreSQLDialect
+2017-08-15 15:07:02,576 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 807 ms
+2017-08-15 15:07:02,687 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-default.xml]
+2017-08-15 15:07:02,726 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-plugin.xml]
+2017-08-15 15:07:02,734 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts.xml]
+2017-08-15 15:07:02,736 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2017-08-15 15:07:02,736 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2017-08-15 15:07:02,736 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2017-08-15 15:07:02,737 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2017-08-15 15:07:02,737 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2017-08-15 15:07:02,737 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2017-08-15 15:07:02,737 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2017-08-15 15:07:02,737 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2017-08-15 15:07:02,737 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2017-08-15 15:07:02,738 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2017-08-15 15:07:02,738 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2017-08-15 15:07:02,738 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2017-08-15 15:07:02,738 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2017-08-15 15:07:02,738 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2017-08-15 15:07:02,738 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2017-08-15 15:07:02,738 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2017-08-15 15:07:02,738 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2017-08-15 15:07:02,738 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2017-08-15 15:07:02,740 [INFO ] o.a.s.config.BeanSelectionProvider - Loading global messages from i18n/framework-messages
+2017-08-15 15:07:02,746 [INFO ] o.a.s.s.StrutsSpringObjectFactory - Initializing Struts-Spring integration...
+2017-08-15 15:07:02,746 [INFO ] c.o.x.spring.SpringObjectFactory - Setting autowire strategy to name
+2017-08-15 15:07:02,746 [INFO ] o.a.s.s.StrutsSpringObjectFactory - ... initialized Struts-Spring integration successfully
+2017-08-15 15:07:30,795 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：admin@5173.com
+2017-08-15 15:07:44,005 [INFO ] c.w.g.u.b.impl.UserInfoManagerImpl - 修改用户：test@5173.com,操作员:admin@5173.com,IP:0:0:0:0:0:0:0:1
+2017-08-15 15:08:03,635 [INFO ] c.w.g.u.b.impl.UserInfoManagerImpl - 修改用户：test@5173.com,操作员:admin@5173.com,IP:0:0:0:0:0:0:0:1
+2017-08-15 15:16:37,367 [INFO ] c.w.g.u.b.impl.UserInfoManagerImpl - 修改用户：0810@5173.com,操作员:admin@5173.com,IP:0:0:0:0:0:0:0:1
+2017-08-15 15:17:17,271 [INFO ] c.w.g.u.b.impl.UserInfoManagerImpl - 修改用户：tld@5173.com,操作员:admin@5173.com,IP:0:0:0:0:0:0:0:1
+2017-08-15 15:17:29,650 [INFO ] c.w.g.u.b.impl.UserInfoManagerImpl - 修改用户：tld@5173.com,操作员:admin@5173.com,IP:0:0:0:0:0:0:0:1
+2017-08-15 15:28:01,480 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started
+2017-08-15 15:28:01,521 [INFO ] o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Tue Aug 15 15:28:01 CST 2017]; root of context hierarchy
+2017-08-15 15:28:01,547 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-context.xml]
+2017-08-15 15:28:01,649 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-import-context.xml]
+2017-08-15 15:28:01,740 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-dao-context.xml]
+2017-08-15 15:28:01,765 [INFO ] o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/gold-facade-backend-business-context.xml]
+2017-08-15 15:28:01,861 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.properties]
+2017-08-15 15:28:01,862 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.develop.properties]
+2017-08-15 15:28:01,862 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [META-INF/application.local.properties]
+2017-08-15 15:28:01,863 [WARN ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Could not load properties from class path resource [META-INF/application.local.properties]: class path resource [META-INF/application.local.properties] cannot be opened because it does not exist
+2017-08-15 15:28:01,866 [INFO ] o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from URL [file:/D:/117bao/branches/7Bao-project/backend/target/classes/META-INF/application.mybatis.properties]
+2017-08-15 15:28:01,900 [INFO ] o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6d7c7554: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator#0,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,loginAction,mainAction,sevenBaoAccountAction,userAction,usersGameAction,authenticationInterceptor,mainStationKeyRedisDAOImpl,authOutInterceptor,logManagerImpl,logDBDAOImpl,eucpMobileMsgImpl,userInfoServiceImpl,gameUserManagerImpl,accountManagerImpl,authenticationImpl,sessionManagerImpl,sevenBaoAccountManagerImpl,userInfoManagerImpl,usersGameManagerImpl,sevenBaoAccountDBDAOImpl,userInfoDBDAOImpl,usersGameDBDAOImpl,userInfoRedisDAOImpl,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#1,transactionManager,sqlSessionFactory,userJedisFactory,userRedisTemplate,dataSource,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2017-08-15 15:28:02,008 [INFO ] c.w.c.f.s.d.m.p.OffsetLimitInterceptor - MyBatis OffsetLimitInterceptor Dialect is com.wzitech.chaos.framework.server.dataaccess.dialect.PostgreSQLDialect
+2017-08-15 15:28:02,147 [INFO ] o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 664 ms
+2017-08-15 15:28:02,251 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-default.xml]
+2017-08-15 15:28:02,293 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts-plugin.xml]
+2017-08-15 15:28:02,301 [INFO ] c.o.x.c.p.XmlConfigurationProvider - Parsing configuration file [struts.xml]
+2017-08-15 15:28:02,305 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (spring) for (com.opensymphony.xwork2.ObjectFactory)
+2017-08-15 15:28:02,305 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.FileManager)
+2017-08-15 15:28:02,305 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+2017-08-15 15:28:02,305 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+2017-08-15 15:28:02,305 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+2017-08-15 15:28:02,305 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+2017-08-15 15:28:02,305 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+2017-08-15 15:28:02,305 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+2017-08-15 15:28:02,305 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+2017-08-15 15:28:02,306 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+2017-08-15 15:28:02,306 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+2017-08-15 15:28:02,306 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+2017-08-15 15:28:02,306 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+2017-08-15 15:28:02,306 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+2017-08-15 15:28:02,307 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+2017-08-15 15:28:02,307 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+2017-08-15 15:28:02,307 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+2017-08-15 15:28:02,307 [INFO ] o.a.s.config.BeanSelectionProvider - Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+2017-08-15 15:28:02,309 [INFO ] o.a.s.config.BeanSelectionProvider - Loading global messages from i18n/framework-messages
+2017-08-15 15:28:02,316 [INFO ] o.a.s.s.StrutsSpringObjectFactory - Initializing Struts-Spring integration...
+2017-08-15 15:28:02,316 [INFO ] c.o.x.spring.SpringObjectFactory - Setting autowire strategy to name
+2017-08-15 15:28:02,316 [INFO ] o.a.s.s.StrutsSpringObjectFactory - ... initialized Struts-Spring integration successfully
+2017-08-15 15:28:19,998 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：admin@5173.com
+2017-08-15 15:28:28,838 [INFO ] c.w.g.u.b.impl.UserInfoManagerImpl - 修改用户：tld@5173.com,操作员:admin@5173.com,IP:0:0:0:0:0:0:0:1
+2017-08-15 15:49:43,679 [INFO ] c.w.g.u.b.impl.UserInfoManagerImpl - 修改用户：test@5173.com,操作员:admin@5173.com,IP:0:0:0:0:0:0:0:1
+2017-08-15 15:49:45,623 [INFO ] c.w.g.u.b.impl.UserInfoManagerImpl - 修改用户：test@5173.com,操作员:admin@5173.com,IP:0:0:0:0:0:0:0:1
+2017-08-15 15:49:50,608 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：admin@5173.com
+2017-08-15 16:04:36,174 [INFO ] c.w.Z.b.action.extjs.AbstractAction - 登录ip:0:0:0:0:0:0:0:1,用户名：admin@5173.com

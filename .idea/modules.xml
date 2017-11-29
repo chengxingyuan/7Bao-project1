@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/7Bao-service/7Bao-Dao.iml" filepath="$PROJECT_DIR$/7Bao-service/7Bao-Dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/7Bao-common.iml" filepath="$PROJECT_DIR$/common/7Bao-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager/7Bao-manager.iml" filepath="$PROJECT_DIR$/manager/7Bao-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/7Bao-project.iml" filepath="$PROJECT_DIR$/7Bao-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usermgmt/7Bao-usermgmt.iml" filepath="$PROJECT_DIR$/usermgmt/7Bao-usermgmt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontend/frontend.iml" filepath="$PROJECT_DIR$/frontend/frontend.iml" />
+    </modules>
+  </component>
+</project>
